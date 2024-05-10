@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Website</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #1f1f2e;
+        color: #ffffff;
+    }
+    header {
+        background-color: #34344a;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        display: inline-block;
+    }
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .top-news {
+        flex: 1;
+        background-color: #483d8b;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+    }
+    .top-news img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .news-section {
+        flex: 2;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .news-item {
+        flex: 1;
+        background-color: #483d8b;
+        padding: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .news-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .aside {
+        flex: 1;
+        background-color: #34344a;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+    }
+    .aside nav {
+        display: block;
+    }
+    .aside nav a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+    @media only screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+        .top-news {
+            margin: 20px 0;
+        }
+        .news-item {
+            flex: 1;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .aside {
+            order: 3;
+            margin-top: 20px;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        .top-news {
+            margin: 20px 0;
+        }
+        .news-item {
+            flex: 1;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .aside {
+            order: 3;
+            margin-top: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Logo</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<div class="container">
+    <div class="top-news">
+        <h2>Top News</h2>
+        <img src="https://img1.akspic.ru/previews/7/9/3/7/7/177397/177397-tecno-tehno_moshh-tehno_pova_neo-dvojnoj_sim-purpur-500x.jpg" alt="Top News Image">
+        <h3>Breaking News Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra magna sit amet nisi tristique, sit amet molestie magna iaculis.</p>
+        <button>Read More</button>
+    </div>
+    <div class="news-section">
+        <div class="news-item">
+            <img src="https://img1.akspic.ru/previews/7/9/3/7/7/177397/177397-tecno-tehno_moshh-tehno_pova_neo-dvojnoj_sim-purpur-500x.jpg" alt="News Image">
+            <h3>News Title 1</h3>
+            <p>May 11, 2024</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra magna sit amet nisi tristique, sit amet molestie magna iaculis.</p>
+            <button>Read More</button>
+        </div>
+        <div class="news-item">
+            <img src="https://img1.akspic.ru/previews/7/9/3/7/7/177397/177397-tecno-tehno_moshh-tehno_pova_neo-dvojnoj_sim-purpur-500x.jpg" alt="News Image">
+            <h3>News Title 2</h3>
+            <p>May 11, 2024</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra magna sit amet nisi tristique, sit amet molestie magna iaculis.</p>
+            <button>Read More</button>
+        </div>
+        <div class="news-item">
+            <img src="https://img1.akspic.ru/previews/7/9/3/7/7/177397/177397-tecno-tehno_moshh-tehno_pova_neo-dvojnoj_sim-purpur-500x.jpg" alt="News Image">
+            <h3>News Title 3</h3>
+            <p>May 11, 2024</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra magna sit amet nisi tristique, sit amet molestie magna iaculis.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+    <div class="aside">
+        <h2>Navigation</h2>
+        <nav>
+            <a href="#">Category 1</a>
+            <a href="#">Category 2</a>
+            <a href="#">Category 3</a>
+            <a href="#">Category 4</a>
+        </nav>
+    </div>
+</div>
+</body>
+</html>
